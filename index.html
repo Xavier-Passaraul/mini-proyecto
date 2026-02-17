@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Mis Metas 2026</title>
+     <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="inicio">
+
+<header>
+  <h1>Xavier Passaraul</h1>
+  <nav>
+    <a href="familia.html">Familia</a>
+    <a href="trabajo.html">Trabajo</a>
+    <a href="formacion.html">Formación</a>
+    <a href="vermas.html">Ver más</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Mis metas para 2026</h2>
+  <p>Este espacio representa mis sueños, mi crecimiento y mi compromiso conmigo mismo.</p>
+  <br>
+  <p>Escribime&#8595;</p>
+  <div class="social-buttons">
+  <a href="https://wa.link/fpzr1g" target="_blank" class="btn btn-whatsapp">WhatsApp</a>
+  <a href="https://www.facebook.com/xavier.passaraul/" target="_blank" class="btn btn-facebook">Facebook</a>
+  <a href="https://www.instagram.com/xavi_er21/" target="_blank" class="btn btn-instagram">Instagram</a>
+</div>
+  <form>
+  <input type="text" placeholder="Tu nombre">
+  <textarea placeholder="Tu mensaje"></textarea>
+  <button>Enviar</button>
+</form>
+</main>
+
+<footer>
+  <p>© 2026 - Prometo ser mejor que ayer</p>
+</footer>
+<script>
+document.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", function(e) {
+    if (this.href.includes(".html")) {
+      e.preventDefault();
+      document.body.style.opacity = 0;
+      setTimeout(() => {
+        window.location = this.href;
+      }, 200);
+    }
+  });
+});
+</script>
+
+</body>
+</html>

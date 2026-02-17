@@ -1,0 +1,210 @@
+/* RESET SUAVE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+/* ANIMACIÓN DE ENTRADA */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 16px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* NAV */
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.6;
+}
+
+/* BOTÓN VOLVER */
+.btn-volver {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn-volver:hover {
+  transform: scale(1.05);
+}
+
+/* GALERÍA */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* FORMULARIO */
+input, textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #444;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #222;
+}
+
+/* COLORES POR SECCIÓN */
+.inicio { background: #f4efe9; }
+.inicio main { background: #ffffff; }
+
+.familia { background: #fff2f2; }
+.familia main { background: #ffdede; }
+
+.trabajo { background: #eef3f9; }
+.trabajo main { background: #d9e3f0; }
+
+.formacion { background: #f3f3f3; }
+.formacion main { background: #e0e0e0; }
+
+.vermas { background: #f6f0ff; }
+.vermas main { background: #e3d8ff; }
+
+/* VIDEO */
+.video-container iframe {
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/* MODO OSCURO AUTOMÁTICO */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #121212 !important;
+    color: white;
+  }
+
+  main {
+    background: #1e1e1e !important;
+  }
+
+  nav a {
+    color: white;
+  }
+
+  .btn-volver {
+    background: #666;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 20px;
+  }
+}
+
+.social-buttons {
+  display: flex;
+  gap: 16px;           /* separación entre botones */
+  justify-content: center;   /* centrados */
+  margin: 20px 0;
+  flex-wrap: wrap;     /* se adaptan en móvil */
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;   /* tamaño cómodo */
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  border-radius: 8px;   /* bordes redondeados modernos */
+  transition: all 0.3s ease;   /* animación suave */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);   /* sombra sutil */
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-2px);   /* efecto "levitación" */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Colores por red social (puedes ajustar los tonos) */
+.btn-whatsapp {
+  background-color: #25D366;
+}
+
+.btn-whatsapp:hover {
+  background-color: #20b058;
+}
+
+.btn-facebook {
+  background-color: #1877F2;
+}
+
+.btn-facebook:hover {
+  background-color: #166fe5;
+}
+
+.btn-instagram {
+  background-color: #E1306C;
+  /* o un gradiente más moderno: */
+  /* background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); */
+}
+
+.btn-instagram:hover {
+  background-color: #c13584;
+}
