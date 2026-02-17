@@ -7,22 +7,29 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body class="vermas">
-<header>
-  <h1>Más sobre mí</h1>
-</header>
-<main>
-  <h2>Mi inspiración</h2>
-  <p>Simplemente ella y nada mas que ella.</p>
-  
-  <div class="video-container">
-  <video controls width="100%" poster="ruta/a/tu/imagen-de-portada.jpg">
-    <source src="image/video1.mp4" type="video/mp4">
-    Tu navegador no soporta el elemento de video.
-    <p>Descarga el video <a href="image/video1.mp4">aquí</a>.</p>
-  </video>
-  </div>
+  <header>
+    <h1>Más sobre mí</h1>
+  </header>
 
-  <a href="index.html" class="btn-volver">⬅ Volver al inicio</a>
-</main>
+  <main>
+    <h2>Mi inspiración</h2>
+    <p>Simplemente ella y nada más que ella.</p>
+
+    <div class="video-container">
+      <!-- Embed de YouTube – reemplaza el ID si es otro video -->
+      <iframe 
+        width="100%" 
+        height="315"  <!-- o el alto que prefieras, 315 es estándar para 16:9 -->
+        src="https://www.youtube.com/embed/NlvY4bDGZAk" 
+        title="Mi inspiración" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <a href="index.html" class="btn-volver">⬅ Volver al inicio</a>
+  </main>
 </body>
 </html>
